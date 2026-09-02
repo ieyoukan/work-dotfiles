@@ -1,4 +1,0 @@
-# GUI tools are deliberately separate because company policies differ.
-cask "ghostty"
-cask "visual-studio-code"
-cask "orbstack"

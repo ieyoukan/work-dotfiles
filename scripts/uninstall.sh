@@ -29,6 +29,7 @@ unlink_if_owned() {
 
 unlink_if_owned "$repo_dir/home/.zprofile" "$HOME/.zprofile"
 unlink_if_owned "$repo_dir/home/.zshrc" "$HOME/.zshrc"
+unlink_if_owned "$repo_dir/home/.vimrc" "$HOME/.vimrc"
 unlink_if_owned "$repo_dir/home/.config/git/ignore" "$HOME/.config/git/ignore"
 
 if [ "$apply" = false ]; then

@@ -1,6 +1,10 @@
 # Generic interactive zsh configuration for macOS.
 
-export EDITOR="${EDITOR:-vim}"
+if command -v zed >/dev/null 2>&1; then
+  export EDITOR="${EDITOR:-zed --wait}"
+else
+  export EDITOR="${EDITOR:-vim}"
+fi
 export VISUAL="${VISUAL:-$EDITOR}"
 export PAGER="${PAGER:-less}"
 export LESS="${LESS:--FRX}"

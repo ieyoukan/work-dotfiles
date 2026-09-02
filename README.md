@@ -7,7 +7,9 @@ Git の氏名・メールアドレス、SSH、各種トークンや認証情報�
 ## 含まれるもの
 
 - zsh / zprofile
+- Vim のプラグイン非依存設定
 - Homebrew の CLI パッケージ一覧
+- Ghostty、Zed、OrbStack の選択式インストール
 - mise、direnv、fzf などの条件付き初期化
 - Git のグローバル ignore（identity や Git 本体の設定は含めない）
 - macOS の控えめな defaults
@@ -33,10 +35,18 @@ brew bundle --file ./Brewfile
 ./scripts/doctor.sh
 ```
 
-GUI アプリも導入する場合だけ、次を実行します。
+GUI アプリは必要なものだけ選んで導入できます。引数なしなら対話式です。
 
 ```sh
-brew bundle --file ./Brewfile.optional
+./scripts/apps.sh
+
+# 引数で直接指定する例
+./scripts/apps.sh ghostty
+./scripts/apps.sh ghostty zed
+./scripts/apps.sh all
+
+# 選択肢だけ表示
+./scripts/apps.sh --list
 ```
 
 macOS defaults は内容を確認してから明示的に実行します。

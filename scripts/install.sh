@@ -42,6 +42,7 @@ link_file() {
 
 link_file "$repo_dir/home/.zprofile" "$HOME/.zprofile"
 link_file "$repo_dir/home/.zshrc" "$HOME/.zshrc"
+link_file "$repo_dir/home/.vimrc" "$HOME/.vimrc"
 link_file "$repo_dir/home/.config/git/ignore" "$HOME/.config/git/ignore"
 
 if [ "$apply" = false ]; then
