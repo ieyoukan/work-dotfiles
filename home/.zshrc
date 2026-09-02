@@ -25,6 +25,7 @@ setopt INTERACTIVE_COMMENTS
 setopt AUTO_CD
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
+setopt PROMPT_SUBST
 
 autoload -Uz compinit
 mkdir -p "${XDG_CACHE_HOME:-$HOME/.cache}"
