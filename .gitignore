@@ -1,0 +1,7 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Machine- and identity-specific settings must stay local.
+*.local
+home/.config/work-dotfiles/
